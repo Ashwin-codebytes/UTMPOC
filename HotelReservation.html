@@ -85,27 +85,27 @@
                 <label for="restaurant">Restaurant Name:</label>
                 <select id="restaurant" name="restaurant" required>
                     <option value="">Select a restaurant</option>
-                    <option value="restaurant1">Restaurant 1</option>
-                    <option value="restaurant2">Restaurant 2</option>
-                    <option value="restaurant3">Restaurant 3</option>
+                    <option value="747370000">Restaurant 1</option>
+                    <option value="747370001">Restaurant 2</option>
+                    <option value="747370002">Restaurant 3</option>
                 </select>
             </div>
             <div>
                 <label for="sitting">Sitting:</label>
                 <select id="sitting" name="sitting" required>
-                    <option value="breakfast">Breakfast</option>
-                    <option value="lunch">Lunch</option>
-                    <option value="dinner">Dinner</option>
+                    <option value="747370001">Breakfast</option>
+                    <option value="747370003">Lunch</option>
+                    <option value="747370002">Dinner</option>
                 </select>
             </div>
             <div>
                 <label for="guests">Number of Guests:</label>
                 <select id="guests" name="guests" required>
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5 Guests</option>
+                    <option value="747370000">1 Guest</option>
+                    <option value="747370001">2 Guests</option>
+                    <option value="747370002">3 Guests</option>
+                    <option value="747370003">4 Guests</option>
+                    <option value="747370004">5 Guests</option>
                 </select>
             </div>
             <div>
@@ -131,7 +131,7 @@
                 return;
             }
 
-            fetch('https://example.com/api/booking', {
+            fetch('https://prod-136.westus.logic.azure.com:443/workflows/245f738178f4410293a9bd9927467c55/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5Aj1wWTwyAWFf9MRIblbn32BSPJKKALjLFIFQfeH3j0', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
