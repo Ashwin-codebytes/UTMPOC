@@ -150,7 +150,7 @@
             .then(response => {
                 if (response.ok) {
                     alert('Booking successful!');
-                    form.reset();
+                    document.getElementById("bookingForm").reset();    
                 } else {
                     alert('Failed to book. Please try again.');
                 }
