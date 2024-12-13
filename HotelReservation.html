@@ -149,6 +149,11 @@
             })
             .then(response => {
                 if (response.ok) {
+                                     gtag('event', 'booking_complete', {
+                      'event_category': 'Bookings',
+                      'event_label': 'Confirm Booking Button',
+                      'value': 100 // Replace with actual booking value
+                    });
                     alert('Booking successful!');
                     document.getElementById("bookingForm").reset();    
                 } else {
